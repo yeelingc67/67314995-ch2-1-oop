@@ -1,8 +1,8 @@
 class Temperature{
-  double _celsius =  0;
+  double _celsius =  0.0;
 
   double get celsius => _celsius;
-  double get fahrenheit => (_celsius*9/5) +32;
+  double get fahrenheit => (_celsius*9/5) + 32;
 
   set celsius(double value){
     if(value < -273.15){
@@ -17,7 +17,9 @@ class Temperature{
 
 void main(){
   var temp = Temperature();
-  temp.celsius = -275.15;
-  temp.celsius = -275.15;
-  print('F = ${temp.fahrenheit }');
+  temp.celsius = 40;
+  print('C = ${temp.celsius } ํC');
+  print('F = ${temp.fahrenheit } ํC');
+
+  temp.celsius = -300.0;
 }
